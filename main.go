@@ -10,6 +10,7 @@ import (
 func main() {
 	r := router.SetupRouter()
 	r.PathPrefix("/").Handler(http.FileServer(http.Dir("./static/")))
-	log.Println("Starting server on :8080")
-	log.Fatal(http.ListenAndServe(":8080", r))
+	port := ":8089" // Change the port to 8089
+	log.Println("Starting server on", port)
+	log.Fatal(http.ListenAndServe(port, r))
 }

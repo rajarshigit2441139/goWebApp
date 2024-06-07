@@ -6,9 +6,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/rajarshigit2441139/goWebApp/models"
-
 	"github.com/gorilla/mux"
+	"github.com/rajarshigit2441139/goWebApp/models"
 )
 
 var todos []models.Todo
